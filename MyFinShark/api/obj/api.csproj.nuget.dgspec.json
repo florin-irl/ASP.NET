@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roman\\Desktop\\ASP.NET\\FinShark\\api\\api.csproj": {}
+    "C:\\Users\\roman\\Desktop\\ASP.NET\\MyFinShark\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roman\\Desktop\\ASP.NET\\FinShark\\api\\api.csproj": {
+    "C:\\Users\\roman\\Desktop\\ASP.NET\\MyFinShark\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\Desktop\\ASP.NET\\FinShark\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\roman\\Desktop\\ASP.NET\\MyFinShark\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\roman\\Desktop\\ASP.NET\\FinShark\\api\\api.csproj",
+        "projectPath": "C:\\Users\\roman\\Desktop\\ASP.NET\\MyFinShark\\api\\api.csproj",
         "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\Desktop\\ASP.NET\\FinShark\\api\\obj\\",
+        "outputPath": "C:\\Users\\roman\\Desktop\\ASP.NET\\MyFinShark\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,22 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
             },
