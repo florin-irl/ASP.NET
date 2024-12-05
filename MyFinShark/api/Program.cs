@@ -43,7 +43,6 @@ builder.Services.AddAuthentication(options =>
     options.DefaultSignOutScheme = JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(options=>
 {
-#pragma warning disable CS8604 // Possible null reference argument.
     options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
     {
         ValidateIssuer = true,
@@ -54,7 +53,6 @@ builder.Services.AddAuthentication(options =>
         ValidAudience = builder.Configuration["JWT:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["JWT:SigningKey"]))
     };
-#pragma warning restore CS8604 // Possible null reference argument.
 }
 );
 
